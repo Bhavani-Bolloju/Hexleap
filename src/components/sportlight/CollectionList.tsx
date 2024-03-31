@@ -4,17 +4,9 @@ import { StaticImageData } from "next/image";
 import rightArrow from "../../assets/right-arrow.svg";
 import leftArrow from "../../assets/left-arrow.svg";
 import Image from "next/image";
-export interface TicketsInterface {
-  name: string;
-  date: string;
-  day: string;
-  time: string;
-  venue: string;
-  collection: string;
-  image: StaticImageData;
-}
+import { TicketsCollectionInterface } from "./SpotLight";
 
-function CollectionList(props: { data: TicketsInterface[] }) {
+function CollectionList(props: TicketsCollectionInterface) {
   return (
     <div className="px-12 relative">
       <button className="absolute top-1/2 left-[-5%] border border-accent p-2">
@@ -35,6 +27,7 @@ function CollectionList(props: { data: TicketsInterface[] }) {
             venue={el.venue}
             collection={el.collection}
             image={el.image}
+            darkTheme={props.darkTheme}
           />
         ))}
       </ul>

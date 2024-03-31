@@ -25,6 +25,8 @@ const config: Config = {
         "dark-5": "#525965",
         "light-1": "#DFDFDF",
         "light-2": "#F7F7F8",
+        "light-3": "#F9F8FF",
+        "light-4": "#F3F9FF",
         accent: "#2C9CF0"
       }
     }
