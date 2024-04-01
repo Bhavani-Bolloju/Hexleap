@@ -23,9 +23,14 @@ function MetaTicket({
       }  transition-colors duration-150`}
     >
       <div className="h-[401px]">
-        <Image className="bg-cover h-full w-full" src={image} alt={name} />
+        <Image className="bg-cover h-[430px] w-full" src={image} alt={name} />
       </div>
-      <div className="flex flex-col justify-between text-center px-3 items-center gap-3">
+      <div
+        className={`w-[80%] m-auto border-dashed relative border-b-2 border-dark-6 after:content-[''] after:bg-dark-3 after:w-6 after:h-6 after:absolute after:top-1/2 
+        before:content-[''] before:bg-dark-3 before:w-6 before:h-6 before:absolute before:top-1/2 before:left-0 after:right-0 after:translate-y-[-50%]
+        before:translate-y-[-50%] after:rounded-full before:rounded-full after:translate-x-10 before:-translate-x-10`}
+      ></div>
+      <div className="flex flex-col justify-between text-center px-3 mt-5 items-center gap-3">
         <p className="font-poppins capitalize font-medium text-[17px]">
           {name}
         </p>

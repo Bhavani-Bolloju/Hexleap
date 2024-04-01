@@ -8,7 +8,7 @@ import { TicketsCollectionInterface } from "./SpotLight";
 
 function CollectionList(props: TicketsCollectionInterface) {
   return (
-    <div className="px-12 relative">
+    <div className="px-5 relative">
       <button className="absolute top-1/2 left-[-5%] border border-accent p-2">
         <Image
           src={leftArrow}
