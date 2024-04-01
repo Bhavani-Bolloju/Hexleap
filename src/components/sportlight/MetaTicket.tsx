@@ -19,9 +19,9 @@ function MetaTicket({
     <div
       className={`min-w-[257px]  h-fill ${
         darkTheme ? "bg-dark-4 " : "bg-white text-black"
-      }  transition-colors duration-150 py-4 grow `}
+      }  transition-colors duration-150 py-4 grow max-[400px]: min-w-0`}
     >
-      <div className=" p-1 m-auto flex items-center justify-center h-full w-full max-[400px]:w-[200px] max-[400px]:h-auto ">
+      <div className=" p-1 m-auto flex items-center justify-center h-full w-full max-[400px]:w-[180px] max-[400px]:h-auto ">
         <Image
           // className="w-full h-[100%] max-[450px]:w-auto"
           className="h-auto w-[100%] bg-cover max-[650px]:w-full max-[650px]:h-full "
