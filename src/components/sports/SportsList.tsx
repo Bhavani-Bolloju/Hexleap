@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function SportsList(props: SportsInterface) {
   return (
-    <ul className="flex gap-5">
+    <ul className="flex gap-5 justify-start flex-wrap">
       {props.data &&
         props.data.map((item, i) => (
           <SportsItem
@@ -19,14 +19,18 @@ function SportsList(props: SportsInterface) {
           />
         ))}
       <li
-        className={`h-[511px] w-[237px] ${
+        className={`max-w-[300px] w-[237px]  ${
           props.darkTheme ? " bg-dark-4" : "bg-white"
-        } p-3 text-dark-1  transition-colors duration-150`}
+        } p-3 text-dark-1  transition-colors duration-150 grow `}
       >
         <div className="h-[218px]">
           <Image src={image4} alt="ads" className="bg-cover h-full w-full" />
         </div>
-        <p className="text-[20px] font-semibold px-2  mt-8 mb-3">
+        <p
+          className={`text-[20px] font-semibold px-2  mt-8 mb-3 ${
+            props.darkTheme ? "text-white" : "text-dark-1"
+          }`}
+        >
           Advertisement title
         </p>
         <p

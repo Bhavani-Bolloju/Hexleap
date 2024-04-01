@@ -23,7 +23,7 @@ function SpotLight(props: TicketsCollectionInterface) {
 
   return (
     <section
-      className={`w-[1241px] m-auto ${linearGradiantClass}  mt-5 p-10 transition-colors duration-150`}
+      className={`px-20 ${linearGradiantClass}  mt-5 p-10 transition-colors duration-150`}
     >
       <div
         className={`w-[915px] m-auto ${

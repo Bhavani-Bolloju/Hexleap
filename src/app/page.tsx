@@ -18,12 +18,12 @@ export default function Home() {
       className={`relative py-10 ${themeClass} transition-colors duration-150`}
     >
       <button
-        className="fixed right-[10%] bg-light-1 rounded-xl w-20 h-8 flex border-2 border-dark-2 hover:scale-105 transition-transform duration-150 outline-none"
+        className="fixed right-[10%] bg-light-2 rounded-2xl w-20 h-8 flex border-2 border-dark-1  transition-transform duration-200 outline-none ease-in-out delay-75 items-center"
         onClick={handleTheme}
       >
         <div
-          className={`w-10 h-full bg-dark-4 rounded-lg ${
-            darkTheme ? "translate-x-0" : "translate-x-[92%]"
+          className={`w-10 h-8 bg-dark-4 rounded-2xl ${
+            darkTheme ? "translate-x-[-1px]" : "translate-x-[92%]"
           } transition-transform duration-200 ease-out relative z-20`}
         ></div>
         <div className="flex justify-between items-center absolute w-full top-1/2 left-1/2 translate-x-[-50%] tra translate-y-[-50%] px-2 z-10">
@@ -34,7 +34,7 @@ export default function Home() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            className="w-6 h-6 text-dark-2 fill-dark-2"
+            className="w-6 h-6 text-dark-5 fill-dark-4"
           >
             <path
               stroke-linecap="round"
@@ -59,10 +59,10 @@ export default function Home() {
           </svg>
         </div>
       </button>
-      <section className="w-[1444px] m-auto mt-10">
+      <section className="px-10 mt-10">
         <Sports darkTheme={darkTheme} data={data}></Sports>
       </section>
-      <section className="w-[1444px] m-auto mt-16">
+      <section className="px-10 mt-16">
         <SpotLight darkTheme={darkTheme} data={ticketsData} />
       </section>
     </main>

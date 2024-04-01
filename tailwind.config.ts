@@ -24,6 +24,7 @@ const config: Config = {
         "dark-4": "#3B3E47",
         "dark-5": "#525965",
         "dark-6": "#818A97",
+        "dark-7": "#A9ACB2",
         "light-1": "#DFDFDF",
         "light-2": "#F7F7F8",
         "light-3": "#F9F8FF",

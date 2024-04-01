@@ -15,11 +15,11 @@ function SportsItem({
 }: SportsItemInterface) {
   return (
     <li
-      className={`h-[511px] w-[237px]  p-3 ${
+      className={`max-w-[350px] w-[237px]  p-3 ${
         darkTheme ? "bg-dark-4" : "bg-white"
-      }  transition-colors duration-150`}
+      }  transition-colors duration-150 grow`}
     >
-      <div className="h-fill">
+      <div className="h-[420px]">
         <Image
           className="bg-cover h-full w-full"
           src={image}
