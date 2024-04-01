@@ -23,7 +23,7 @@ function SpotLight(props: TicketsCollectionInterface) {
 
   return (
     <section
-      className={`px-20 ${linearGradiantClass}  mt-5 p-10 transition-colors duration-150 max-[816px]:px-10 max-[700px]:px-20 max-[550px]:px-10`}
+      className={`px-20 ${linearGradiantClass}  mt-5 p-10 transition-colors duration-150 max-[816px]:px-10 max-[700px]:px-20 max-[550px]:px-10 max-[450px]:px-5`}
     >
       <div
         className={`px-40 ${
@@ -31,7 +31,7 @@ function SpotLight(props: TicketsCollectionInterface) {
         } transition-colors duration-150 max-[1400px]:px-20 max-[1250px]:px-10 max-[1150px]:px-0  `}
       >
         <h2
-          className={`text-center font-poppins font-bold text-[50px] capitalize max-[750px]:leading-[1.2]`}
+          className={`text-center font-poppins font-bold text-[50px] capitalize max-[750px]:leading-[1.2] max-[750px]:text-[30px]`}
         >
           collection spotlight
         </h2>

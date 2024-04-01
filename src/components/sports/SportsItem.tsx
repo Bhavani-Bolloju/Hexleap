@@ -19,13 +19,11 @@ function SportsItem({
         darkTheme ? "bg-dark-4" : "bg-white"
       }  transition-colors duration-150 grow `}
     >
-      <div className="max-h-[420px] w-100% flex justify-center">
+      <div className="max-h-[420px] w-auto flex justify-center">
         <Image
-          className="bg-cover h-auto w-full max-[450px]:w-auto"
+          className="bg-cover h-auto w-full max-[400px]:w-auto"
           src={image}
           alt={name}
-          width={500}
-          height={1000}
         />
       </div>
       <p
