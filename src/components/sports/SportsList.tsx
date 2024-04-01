@@ -21,7 +21,7 @@ function SportsList(props: SportsInterface) {
       <li
         className={`h-[511px] w-[237px] ${
           props.darkTheme ? " bg-dark-4" : "bg-white"
-        } p-3 text-dark-1`}
+        } p-3 text-dark-1  transition-colors duration-150`}
       >
         <div className="h-[218px]">
           <Image src={image4} alt="ads" className="bg-cover h-full w-full" />
@@ -32,7 +32,7 @@ function SportsList(props: SportsInterface) {
         <p
           className={`text-[12.5px] px-2  ${
             props.darkTheme ? "text-light-1" : "text-dark-5"
-          }`}
+          }  transition-colors duration-150`}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eum
           dolor, molestiae reiciendis sapiente unde reprehenderit? Quidem

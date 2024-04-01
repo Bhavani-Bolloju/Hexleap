@@ -20,7 +20,7 @@ function MetaTicket({
     <li
       className={`w-[257px]  ${
         darkTheme ? "bg-dark-4 py-4" : "bg-white text-black"
-      } `}
+      }  transition-colors duration-150`}
     >
       <div className="h-[401px]">
         <Image className="bg-cover h-full w-full" src={image} alt={name} />

@@ -22,11 +22,13 @@ function SpotLight(props: TicketsCollectionInterface) {
     : "bg-gradient-to-b from-light-3 to-light-4";
 
   return (
-    <section className={`w-[1241px] m-auto ${linearGradiantClass}  mt-5 p-10`}>
+    <section
+      className={`w-[1241px] m-auto ${linearGradiantClass}  mt-5 p-10 transition-colors duration-150`}
+    >
       <div
         className={`w-[915px] m-auto ${
           props.darkTheme ? "text-white" : "text-black"
-        }`}
+        } transition-colors duration-150`}
       >
         <h2
           className={`text-center font-poppins font-bold text-[50px] capitalize `}

@@ -18,7 +18,7 @@ export default function Home() {
       className={`relative py-10 ${themeClass} transition-colors duration-150`}
     >
       <button
-        className="absolute right-[10%] bg-light-1 rounded-xl w-20 h-8 flex border-2 border-dark-2 hover:scale-105 transition-transform duration-150 outline-none"
+        className="fixed right-[10%] bg-light-1 rounded-xl w-20 h-8 flex border-2 border-dark-2 hover:scale-105 transition-transform duration-150 outline-none"
         onClick={handleTheme}
       >
         <div
