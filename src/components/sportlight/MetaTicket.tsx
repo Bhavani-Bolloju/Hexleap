@@ -1,5 +1,4 @@
 import React from "react";
-import ticket1 from "../../assets/ticket1.png";
 import Image from "next/image";
 import { TicketsInterface } from "./SpotLight";
 
@@ -17,14 +16,15 @@ function MetaTicket({
   darkTheme
 }: MetaTickerInterface) {
   return (
-    <li
-      className={`w-[257px]  ${
+    <div
+      className={`min-w-[257px]  h-fill ${
         darkTheme ? "bg-dark-4 " : "bg-white text-black"
-      }  transition-colors duration-150 pb-4`}
+      }  transition-colors duration-150 py-4 grow `}
     >
-      <div className="h-[401px] w-full m-auto">
+      <div className=" p-1 m-auto flex items-center justify-center h-auto w-auto">
         <Image
-          className="object-cover h-[430px] w-[110%]"
+          // className="w-full h-[100%] max-[450px]:w-auto"
+          className="h-auto w-100% bg-cover max-[650px]:w-auto"
           src={image}
           alt={name}
         />
@@ -38,7 +38,7 @@ function MetaTicket({
             : "after:bg-light-2 before:bg-light-2 border-dark-7"
         }`}
       ></div>
-      <div className="flex flex-col justify-between text-center px-3 mt-5 items-center gap-3">
+      <div className="flex flex-col justify-between text-center px-5 mt-5 items-center gap-3">
         <p className="font-poppins capitalize font-medium text-[17px]">
           {name}
         </p>
@@ -73,7 +73,7 @@ function MetaTicket({
           {collection}
         </button>
       </div>
-    </li>
+    </div>
   );
 }
 

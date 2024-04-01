@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function SportsList(props: SportsInterface) {
   return (
-    <ul className="flex gap-5 justify-start flex-wrap">
+    <ul className="flex gap-5 justify-start flex-wrap max-[600px]:justify-center">
       {props.data &&
         props.data.map((item, i) => (
           <SportsItem
@@ -19,7 +19,7 @@ function SportsList(props: SportsInterface) {
           />
         ))}
       <li
-        className={`max-w-[300px] w-[237px]  ${
+        className={`max-w-[350px] w-[237px] ${
           props.darkTheme ? " bg-dark-4" : "bg-white"
         } p-3 text-dark-1  transition-colors duration-150 grow `}
       >

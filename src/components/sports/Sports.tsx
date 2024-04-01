@@ -19,7 +19,7 @@ interface NewsportsInterface extends SportsInterface {
 }
 function Sports(props: SportsInterface) {
   return (
-    <section className="px-10">
+    <section className="px-10 max-[750px]:px-0">
       <h1
         className={`font-poppins font-bold text-[24px] border-b-2 w-fit border-accent capitalize mb-6 ${
           props.darkTheme ? "text-white" : "text-black "

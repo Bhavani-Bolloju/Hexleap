@@ -17,3 +17,19 @@ body {
     text-wrap: balance;
   }
 }
+
+.splide__arrow {
+  background-color: transparent !important;
+  border: 1px solid #2c9cf0 !important;
+  border-radius: 0 !important;
+
+  svg {
+    fill: #2c9cf0 !important;
+  }
+}
+.splide__arrow--prev {
+  left: -40px !important;
+}
+.splide__arrow--next {
+  right: -40px !important;
+}

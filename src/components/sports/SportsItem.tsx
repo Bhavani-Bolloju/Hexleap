@@ -17,11 +17,11 @@ function SportsItem({
     <li
       className={`max-w-[350px] w-[237px]  p-3 ${
         darkTheme ? "bg-dark-4" : "bg-white"
-      }  transition-colors duration-150 grow`}
+      }  transition-colors duration-150 grow `}
     >
-      <div className="h-[420px]">
+      <div className="max-h-[420px] w-100% flex justify-center">
         <Image
-          className="bg-cover h-full w-full"
+          className="bg-cover h-auto w-full max-[450px]:w-auto"
           src={image}
           alt={name}
           width={500}
